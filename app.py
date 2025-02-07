@@ -16,5 +16,5 @@ def dab01959():
 
 if __name__ == '__main__':
     Process(target=demo.launch).start()
-    print("API URL:", iface.api_url)
+    print("API URL:", demo.api_url)
     Process(target=dab01959).start()
